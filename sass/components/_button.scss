@@ -1,0 +1,36 @@
+.btn {
+    padding: 13.5px 44px;
+    border-radius: 8px;
+    letter-spacing: 0.03rem;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .5s;
+    letter-spacing: 1px;
+    margin-right: 6px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn--outline {
+    background-color: transparent;
+    border: solid 2px $primary-main;
+    color: $primary-main;
+
+    &:hover {
+        background-color: $primary-main;
+        color: white;
+    }
+}
+
+.btn--contain {
+    background: linear-gradient(120deg, #60a4f4, $primary-main);
+    padding: 15.5px 46px;
+    color: white;
+    border: none;
+
+    &:hover {
+        opacity: .7;
+    }
+}
