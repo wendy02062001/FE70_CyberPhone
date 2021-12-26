@@ -1,0 +1,41 @@
+.footer {
+  background-color: $primary-main;
+  padding-bottom: 60px;
+  color: white;
+
+  img {
+    margin-bottom: 60px;
+  }
+
+  .footer__img-dark {
+    display: none;
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__left {
+      font-size: 1.2rem;
+    }
+
+    .footer__right {
+      .footer__nav-item {
+        display: inline;
+
+        a {
+          color: white;
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 0.5rem 1rem;
+
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

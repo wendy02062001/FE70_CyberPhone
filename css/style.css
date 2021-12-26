@@ -76,8 +76,8 @@ html {
   letter-spacing: 0.03rem;
   font-size: 14px;
   font-weight: 400;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   letter-spacing: 1px;
   margin-right: 6px;
 }
@@ -105,7 +105,27 @@ html {
 }
 
 .btn--contain:hover {
-  opacity: .7;
+  opacity: 0.7;
+}
+
+.btn--buy {
+  background: #f5f9fe;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 0.04px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #2a73dd;
+  -webkit-box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+          box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn--buy:hover {
+  -webkit-box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+          box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
 }
 
 .header {
@@ -237,5 +257,146 @@ html {
   .banner .banner__container .banner__img {
     display: none;
   }
+}
+
+.product {
+  padding: 100px 0;
+}
+
+.product__container h2.product__title {
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d365e;
+  letter-spacing: 0.015rem;
+}
+
+.product__container .product__grid .product__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__container .product__grid .product__row .product__item {
+  max-width: 33.33%;
+  -webkit-box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+          box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  background-color: #f5f9fe;
+  border: none;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.product__container .product__grid .product__row .product__item .product__img {
+  width: 100%;
+  -webkit-box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+          box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  border-radius: 8px;
+}
+
+.product__container .product__grid .product__row .product__item-body {
+  padding: 1.5rem;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #1d365e;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__txt h3.product__name {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__txt p.product__category {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__txt .product__price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__icon .product__rating ul li {
+  display: inline;
+}
+
+.product__container .product__grid .product__row .product__item-body .product__icon .product__rating ul li i {
+  color: #f9d412;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #2a73dd;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.footer img {
+  margin-bottom: 60px;
+}
+
+.footer .footer__img-dark {
+  display: none;
+}
+
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__container .footer__left {
+  font-size: 1.2rem;
+}
+
+.footer .footer__container .footer__right .footer__nav-item {
+  display: inline;
+}
+
+.footer .footer__container .footer__right .footer__nav-item a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.footer .footer__container .footer__right .footer__nav-item a:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
