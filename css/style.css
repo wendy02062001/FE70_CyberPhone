@@ -134,6 +134,15 @@ html {
   right: 0;
   z-index: 500;
   color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.setting--open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .setting__btn {
@@ -145,8 +154,8 @@ html {
   position: fixed;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #fff;
 }
 
@@ -156,10 +165,6 @@ html {
   padding: 20px 10px;
   font-size: 1.2rem;
   text-align: center;
-}
-
-.setting__content--hidden {
-  display: none;
 }
 
 .setting__content .setting__theme {

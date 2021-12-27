@@ -4,6 +4,12 @@
   right: 0;
   z-index: 500;
   color: #fff;
+  transform: translateX(100%);
+  transition: all 0.5s;
+
+  &--open {
+    transform: translateX(0);
+  }
 
   &__btn {
     background: $primary-light;
@@ -13,7 +19,7 @@
     letter-spacing: 0.015rem;
     position: fixed;
     transform: translateX(-100%);
-    transition: .5s;
+    transition: 0.5s;
     color: #fff;
   }
 
@@ -23,10 +29,6 @@
     padding: 20px 10px;
     font-size: 1.2rem;
     text-align: center;
-
-    &--hidden {
-      display: none;
-    }
 
     .setting__theme {
       display: flex;

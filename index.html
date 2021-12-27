@@ -329,8 +329,8 @@
     </div>
     <!--End wrapper-->
 
-    <div class="setting">
-      <button class="setting__btn">
+    <div id="theme" class="setting">
+      <button class="setting__btn" onclick="openTheme()">
         <i class="fa fa-cog"></i>
       </button>
       <div class="setting__content setting__content--hidden">
@@ -345,5 +345,16 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function openTheme() {
+        var theme = document.getElementById("theme");
+        if (theme.classList.contains("setting--open")) {
+          theme.classList.remove("setting--open");
+        } else {
+          theme.classList.add("setting--open");
+        }
+      }
+    </script>
   </body>
 </html>
