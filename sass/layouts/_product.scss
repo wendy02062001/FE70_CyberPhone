@@ -12,12 +12,8 @@
 
     .product__grid {
       .product__row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
         .product__item {
-          max-width: 33.33%;
           box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
           background-color: #f5f9fe;
           border: none;
@@ -57,23 +53,23 @@
             }
 
             .product__icon {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
 
-                .product__rating {
-                    ul {
-                        li {
-                            display: inline;
+              .product__rating {
+                ul {
+                  li {
+                    display: inline;
 
-                            i {
-                                color: #f9d412;
-                                font-weight: 900;
-                                font-size: 1.2rem;
-                            }
-                        }
+                    i {
+                      color: #f9d412;
+                      font-weight: 900;
+                      font-size: 1.2rem;
                     }
+                  }
                 }
+              }
             }
           }
         }

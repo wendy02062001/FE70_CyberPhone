@@ -53,7 +53,7 @@ a {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 html {
@@ -147,7 +147,7 @@ html {
 
 .setting__btn {
   background: #2196f3;
-  padding: 5px 20px;
+  padding: 8px 20px;
   border: 1px solid #2196f3;
   border-radius: 8px 0 0 8px;
   letter-spacing: 0.015rem;
@@ -157,6 +157,12 @@ html {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.setting__btn:focus {
+  outline: none;
 }
 
 .setting__content {
@@ -231,41 +237,23 @@ html {
   z-index: 10;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__container .header__logo a {
+.header__container .header__logo {
   font-size: 2rem;
   font-weight: 700;
   color: #2a73dd;
 }
 
-.header__container .header__nav .header__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header__container .header__nav .header__nav-list .header__nav-item {
+.header__container .header__nav .nav-item {
   padding: 25px;
 }
 
-.header__container .header__nav .header__nav-list .header__nav-item a {
+.header__container .header__nav .nav-item a {
   font-size: 16px;
   font-weight: 600;
   color: #1d365e;
 }
 
-.header__container .header__nav .header__nav-list .header__nav-item a::after {
+.header__container .header__nav .nav-item a::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -274,27 +262,33 @@ html {
   margin-top: 3px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.header__container .header__nav .header__nav-list .header__nav-item:hover a {
+.header__container .header__nav .nav-item:hover a {
   color: #2a73dd;
 }
 
-.header__container .header__nav .header__nav-list .header__nav-item:hover a::after {
+.header__container .header__nav .nav-item:hover a::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.header__container .header__nav .header__nav-list .header__nav-item--active a {
+.header__container .header__nav .active a {
   color: #2a73dd;
 }
 
-.header__container .header__nav .header__nav-list .header__nav-item--active a::after {
+.header__container .header__nav .active a::after {
   width: 100%;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+@media only screen and (max-width: 992px) {
+  .header__container {
+    max-width: 96%;
+  }
 }
 
 .banner {
@@ -352,6 +346,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .banner .banner__container {
+    max-width: 96%;
+  }
+}
+
 .product {
   padding: 100px 0;
 }
@@ -365,20 +365,7 @@ html {
   letter-spacing: 0.015rem;
 }
 
-.product__container .product__grid .product__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .product__container .product__grid .product__row .product__item {
-  max-width: 33.33%;
   -webkit-box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
           box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
   background-color: #f5f9fe;
@@ -491,5 +478,11 @@ html {
 .footer .footer__container .footer__right .footer__nav-item a:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .footer .footer__container {
+    max-width: 96%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

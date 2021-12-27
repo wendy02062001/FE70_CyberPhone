@@ -13,7 +13,7 @@
 
   &__btn {
     background: $primary-light;
-    padding: 5px 20px;
+    padding: 8px 20px;
     border: 1px solid $primary-light;
     border-radius: 8px 0 0 8px;
     letter-spacing: 0.015rem;
@@ -21,6 +21,12 @@
     transform: translateX(-100%);
     transition: 0.5s;
     color: #fff;
+    font-size: 14px;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__content {

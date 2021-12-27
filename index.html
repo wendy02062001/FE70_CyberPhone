@@ -20,6 +20,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -27,35 +35,41 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
-          <div class="header__logo">
-            <a href="/"> CyberPhone </a>
-          </div>
-          <!--End header__logo-->
-
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item header__nav-item--active">
-                <a href="/">Home</a>
-              </li>
-
-              <li class="header__nav-item">
-                <a href="#">About</a>
-              </li>
-
-              <li class="header__nav-item">
-                <a href="#">Shop</a>
-              </li>
-
-              <li class="header__nav-item">
-                <a href="#">Blog</a>
-              </li>
-
-              <li class="header__nav-item">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+          <nav class="navbar navbar-expand-lg">
+            <!-- Brand -->
+            <a class="navbar-brand header__logo" href="/">
+              CyberPhone
+            </a>
+    
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+              </span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse header__nav" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="active nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </nav>
-          <!--End nav-->
         </div>
         <!--End header__container-->
       </header>
@@ -90,205 +104,241 @@
           <div class="product__container container">
             <h2 class="product__title">-Featured Products-</h2>
             <div class="product__grid">
-              <div class="product__row">
-                <div class="product__item">
-                  <img class="product__img" src="./image/product1.png" alt="" />
+              <div class="row product__row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="product__item">
+                    <img
+                      class="product__img"
+                      src="./image/product1.png"
+                      alt=""
+                    />
 
-                  <div class="product__item-body">
-                    <div class="product__txt">
-                      <div class="product__info">
-                        <h3 class="product__name">CyberBeats</h3>
-                        <p class="product__category">Accessories</p>
+                    <div class="product__item-body">
+                      <div class="product__txt">
+                        <div class="product__info">
+                          <h3 class="product__name">CyberBeats</h3>
+                          <p class="product__category">Accessories</p>
+                        </div>
+                        <div class="product__price">$99.99</div>
                       </div>
-                      <div class="product__price">$99.99</div>
-                    </div>
 
-                    <div class="product__icon">
-                      <div class="product__rating">
-                        <ul>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                        </ul>
-                      </div>
-                      <div class="product__btn">
-                        <button class="btn btn--buy">
-                          <i class="fa fa-shopping-cart"></i>
-                          Buy Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End item-->
-
-                <div class="product__item">
-                  <img class="product__img" src="./image/product2.png" alt="" />
-                  <div class="product__item-body">
-                    <div class="product__txt">
-                      <div class="product__info">
-                        <h3 class="product__name">CyberPhone</h3>
-                        <p class="product__category">Accessories</p>
-                      </div>
-                      <div class="product__price">$99.99</div>
-                    </div>
-
-                    <div class="product__icon">
-                      <div class="product__rating">
-                        <ul>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                        </ul>
-                      </div>
-                      <div class="product__btn">
-                        <button class="btn btn--buy">
-                          <i class="fa fa-shopping-cart"></i>
-                          Buy Now
-                        </button>
+                      <div class="product__icon">
+                        <div class="product__rating">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="product__btn">
+                          <button class="btn btn--buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy Now
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!--End item-->
                 </div>
-                <!--End item-->
 
-                <div class="product__item">
-                  <img class="product__img" src="./image/product3.png" alt="" />
-
-                  <div class="product__item-body">
-                    <div class="product__txt">
-                      <div class="product__info">
-                        <h3 class="product__name">CyberTablet</h3>
-                        <p class="product__category">Accessories</p>
+                <div class="col-lg-4 col-md-6">
+                  <div class="product__item">
+                    <img
+                      class="product__img"
+                      src="./image/product2.png"
+                      alt=""
+                    />
+                    <div class="product__item-body">
+                      <div class="product__txt">
+                        <div class="product__info">
+                          <h3 class="product__name">CyberPhone</h3>
+                          <p class="product__category">Accessories</p>
+                        </div>
+                        <div class="product__price">$99.99</div>
                       </div>
-                      <div class="product__price">$99.99</div>
-                    </div>
 
-                    <div class="product__icon">
-                      <div class="product__rating">
-                        <ul>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                        </ul>
-                      </div>
-                      <div class="product__btn">
-                        <button class="btn btn--buy">
-                          <i class="fa fa-shopping-cart"></i>
-                          Buy Now
-                        </button>
+                      <div class="product__icon">
+                        <div class="product__rating">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="product__btn">
+                          <button class="btn btn--buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy Now
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!--End item-->
                 </div>
-                <!--End item-->
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="product__item">
+                    <img
+                      class="product__img"
+                      src="./image/product3.png"
+                      alt=""
+                    />
+
+                    <div class="product__item-body">
+                      <div class="product__txt">
+                        <div class="product__info">
+                          <h3 class="product__name">CyberTablet</h3>
+                          <p class="product__category">Accessories</p>
+                        </div>
+                        <div class="product__price">$99.99</div>
+                      </div>
+
+                      <div class="product__icon">
+                        <div class="product__rating">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="product__btn">
+                          <button class="btn btn--buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End item-->
+                </div>
               </div>
               <!--End row-->
 
-              <div class="product__row">
-                <div class="product__item">
-                  <img class="product__img" src="./image/product4.png" alt="" />
+              <div class="row product__row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="product__item">
+                    <img
+                      class="product__img"
+                      src="./image/product4.png"
+                      alt=""
+                    />
 
-                  <div class="product__item-body">
-                    <div class="product__txt">
-                      <div class="product__info">
-                        <h3 class="product__name">CyberWatch</h3>
-                        <p class="product__category">Accessories</p>
+                    <div class="product__item-body">
+                      <div class="product__txt">
+                        <div class="product__info">
+                          <h3 class="product__name">CyberWatch</h3>
+                          <p class="product__category">Accessories</p>
+                        </div>
+                        <div class="product__price">$99.99</div>
                       </div>
-                      <div class="product__price">$99.99</div>
-                    </div>
 
-                    <div class="product__icon">
-                      <div class="product__rating">
-                        <ul>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                        </ul>
-                      </div>
-                      <div class="product__btn">
-                        <button class="btn btn--buy">
-                          <i class="fa fa-shopping-cart"></i>
-                          Buy Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End item-->
-
-                <div class="product__item">
-                  <img class="product__img" src="./image/product5.png" alt="" />
-                  <div class="product__item-body">
-                    <div class="product__txt">
-                      <div class="product__info">
-                        <h3 class="product__name">CyberGlass</h3>
-                        <p class="product__category">Accessories</p>
-                      </div>
-                      <div class="product__price">$99.99</div>
-                    </div>
-
-                    <div class="product__icon">
-                      <div class="product__rating">
-                        <ul>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                        </ul>
-                      </div>
-                      <div class="product__btn">
-                        <button class="btn btn--buy">
-                          <i class="fa fa-shopping-cart"></i>
-                          Buy Now
-                        </button>
+                      <div class="product__icon">
+                        <div class="product__rating">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="product__btn">
+                          <button class="btn btn--buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy Now
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!--End item-->
                 </div>
-                <!--End item-->
 
-                <div class="product__item">
-                  <img class="product__img" src="./image/product6.png" alt="" />
-
-                  <div class="product__item-body">
-                    <div class="product__txt">
-                      <div class="product__info">
-                        <h3 class="product__name">CyberGadget</h3>
-                        <p class="product__category">Accessories</p>
+                <div class="col-lg-4 col-md-6">
+                  <div class="product__item">
+                    <img
+                      class="product__img"
+                      src="./image/product5.png"
+                      alt=""
+                    />
+                    <div class="product__item-body">
+                      <div class="product__txt">
+                        <div class="product__info">
+                          <h3 class="product__name">CyberGlass</h3>
+                          <p class="product__category">Accessories</p>
+                        </div>
+                        <div class="product__price">$99.99</div>
                       </div>
-                      <div class="product__price">$99.99</div>
-                    </div>
 
-                    <div class="product__icon">
-                      <div class="product__rating">
-                        <ul>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                          <li><i class="fa fa-star"></i></li>
-                        </ul>
-                      </div>
-                      <div class="product__btn">
-                        <button class="btn btn--buy">
-                          <i class="fa fa-shopping-cart"></i>
-                          Buy Now
-                        </button>
+                      <div class="product__icon">
+                        <div class="product__rating">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="product__btn">
+                          <button class="btn btn--buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy Now
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!--End item-->
                 </div>
-                <!--End item-->
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="product__item">
+                    <img
+                      class="product__img"
+                      src="./image/product6.png"
+                      alt=""
+                    />
+
+                    <div class="product__item-body">
+                      <div class="product__txt">
+                        <div class="product__info">
+                          <h3 class="product__name">CyberGadget</h3>
+                          <p class="product__category">Accessories</p>
+                        </div>
+                        <div class="product__price">$99.99</div>
+                      </div>
+
+                      <div class="product__icon">
+                        <div class="product__rating">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="product__btn">
+                          <button class="btn btn--buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End item-->
+                </div>
               </div>
               <!--End row-->
             </div>
@@ -330,7 +380,7 @@
     <!--End wrapper-->
 
     <div id="theme" class="setting">
-      <button class="setting__btn" onclick="openTheme()">
+      <button id="theme-btn" class="setting__btn" onclick="openTheme()">
         <i class="fa fa-cog"></i>
       </button>
       <div class="setting__content setting__content--hidden">
@@ -346,9 +396,27 @@
       </div>
     </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
       function openTheme() {
         var theme = document.getElementById("theme");
+        var button = document.getElementById("theme-btn");
+
         if (theme.classList.contains("setting--open")) {
           theme.classList.remove("setting--open");
         } else {
