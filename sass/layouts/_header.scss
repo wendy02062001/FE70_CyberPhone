@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  padding: 20px;
 
   &__container {
     .navbar-toggler {
@@ -25,8 +26,6 @@
 
     .header__nav {
       .nav-item {
-        padding: 20px;
-
         a {
           font-size: 16px;
           font-weight: 600;
