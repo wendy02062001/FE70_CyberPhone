@@ -12,7 +12,6 @@
 
     .product__grid {
       .product__row {
-
         .product__item {
           box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
           background-color: #f5f9fe;
@@ -73,6 +72,10 @@
             }
           }
         }
+      }
+
+      @include Responsive(lg) {
+        padding: 0 40px;
       }
     }
   }

@@ -5,8 +5,6 @@
   padding: 225px 0;
 
   .banner__container {
-    display: flex;
-    align-items: center;
     .banner__content {
       h1.banner__title {
         font-size: 6rem;
@@ -14,6 +12,10 @@
         color: $primary-main;
         margin-bottom: 7px;
         line-height: 1.2;
+
+        @include Responsive(md) {
+          font-size: 4rem;
+        }
       }
 
       h2.banner__subtitle {
@@ -29,6 +31,11 @@
         font-weight: 400;
         color: #656774;
         margin-bottom: 25px;
+      }
+
+      @include Responsive(md) {
+        max-width: 500px;
+        margin: auto;
       }
     }
 
@@ -46,7 +53,11 @@
     }
 
     @include Responsive(lg) {
-        max-width: 96%;
+        max-width: 800px;
     }
   }
+
+  @include Responsive(lg) {
+    padding: 150px 0;
+}
 }

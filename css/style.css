@@ -71,7 +71,7 @@ html {
 }
 
 .btn {
-  padding: 13.5px 44px;
+  padding: 13.5px 40px;
   border-radius: 8px;
   letter-spacing: 0.03rem;
   font-size: 14px;
@@ -231,10 +231,17 @@ html {
   background-color: #f5f9fe;
   -webkit-box-shadow: 0 2px 4px #e2ebfc;
           box-shadow: 0 2px 4px #e2ebfc;
-  padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 10;
+}
+
+.header__container .navbar-toggler .navbar-toggler-icon i {
+  font-size: 22px;
+}
+
+.header__container .navbar-toggler:focus {
+  outline: none;
 }
 
 .header__container .header__logo {
@@ -244,7 +251,7 @@ html {
 }
 
 .header__container .header__nav .nav-item {
-  padding: 25px;
+  padding: 20px;
 }
 
 .header__container .header__nav .nav-item a {
@@ -264,6 +271,12 @@ html {
           transform: scaleX(0);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media only screen and (max-width: 992px) {
+  .header__container .header__nav .nav-item a {
+    text-align: center;
+  }
 }
 
 .header__container .header__nav .nav-item:hover a {
@@ -298,21 +311,18 @@ html {
   padding: 225px 0;
 }
 
-.banner .banner__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .banner .banner__container .banner__content h1.banner__title {
   font-size: 6rem;
   font-weight: 700;
   color: #2a73dd;
   margin-bottom: 7px;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .banner__container .banner__content h1.banner__title {
+    font-size: 4rem;
+  }
 }
 
 .banner .banner__container .banner__content h2.banner__subtitle {
@@ -328,6 +338,13 @@ html {
   font-weight: 400;
   color: #656774;
   margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .banner__container .banner__content {
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
 .banner .banner__container .banner__img {
@@ -348,7 +365,13 @@ html {
 
 @media only screen and (max-width: 992px) {
   .banner .banner__container {
-    max-width: 96%;
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .banner {
+    padding: 150px 0;
   }
 }
 
@@ -432,6 +455,12 @@ html {
   color: #f9d412;
   font-weight: 900;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .product__container .product__grid {
+    padding: 0 40px;
+  }
 }
 
 .footer {
