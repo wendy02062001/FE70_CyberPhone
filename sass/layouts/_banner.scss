@@ -28,6 +28,7 @@
 
       p.banner__txt {
         font-size: 1.25rem;
+        line-height: 25px;
         font-weight: 400;
         color: #656774;
         margin-bottom: 25px;
@@ -53,11 +54,11 @@
     }
 
     @include Responsive(lg) {
-        max-width: 800px;
+      max-width: 860px;
     }
   }
 
   @include Responsive(lg) {
     padding: 150px 0;
-}
+  }
 }
