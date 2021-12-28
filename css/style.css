@@ -246,6 +246,10 @@ html {
   color: #2a73dd;
 }
 
+.header__container .header__nav .nav-item {
+  margin: 0 20px;
+}
+
 .header__container .header__nav .nav-item a {
   font-size: 16px;
   font-weight: 600;
